@@ -11,9 +11,9 @@ export default function Proposal () {
         const randomY =Math.floor(Math.random() * windowHeight);
         if(e.currentTarget instanceof HTMLButtonElement )
         {
-            e.target.style.position = 'absolute';
-            e.target.style.left = `${randomX}px`;
-            e.target.style.top = `${randomY}px`;
+            e.currentTarget.style.position = 'absolute';
+            e.currentTarget.style.left = `${randomX}px`;
+            e.currentTarget.style.top = `${randomY}px`;
     }
         }
         
