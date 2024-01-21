@@ -3,13 +3,13 @@ import { Button } from "@/components/ui/button";
 
 export default function Proposal () {
 
-    const handleHover = (e) => {
+    const handleHover = (e:React.MouseEvent<HTMLButtonElement>) => {
         const windowHeight = window.innerHeight;
         const windowWidth = window.innerWidth;
 
         const randomX = Math.floor(Math.random() * windowWidth);
         const randomY =Math.floor(Math.random() * windowHeight);
-
+        if(e.currentTarget instanceof HTMLButtonElement )
         e.target.style.position = 'absolute';
         e.target.style.left = `${randomX}px`;
         e.target.style.top = `${randomY}px`;
